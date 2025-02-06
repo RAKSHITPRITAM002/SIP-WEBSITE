@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Setup & Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Systematic Investment Plan (SIP) Setup</h1>
+    
+    <!-- SIP Setup Form -->
+    <form id="sipForm">
+      <label for="amount">Investment Amount ($):</label>
+      <input type="number" id="amount" required><br><br>
+
+      <label for="frequency">Investment Frequency:</label>
+      <select id="frequency" required>
+        <option value="monthly">Monthly</option>
+        <option value="quarterly">Quarterly</option>
+      </select><br><br>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" required><br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" required><br><br>
+
+      <button type="submit">Set Up SIP</button>
+    </form>
+
+    <!-- Confirmation Message (hidden by default) -->
+    <div id="confirmationMessage" style="display:none;">
+      <h2>Your SIP setup is successful!</h2>
+      <p>We will send you a payment confirmation email soon.</p>
+    </div>
+    
+    <!-- PayPal Payment Section (hidden by default) -->
+    <div id="paymentSection" style="display:none;">
+      <h2>SIP Payment System</h2>
+      <p>Please make your payment to confirm your SIP.</p>
+      <div id="paypal-button-container"></div> <!-- PayPal button will be inserted here -->
+    </div>
+  </div>
+
+  <!-- Include PayPal's JavaScript SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Ae5R3c1tWBijy1QgeBOL5kxLtiDv0F5emG5AkGTvo0uJ0jtsLd2QIge5xKxVS-5orniM8qTE53BTnu7P&currency=USD"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

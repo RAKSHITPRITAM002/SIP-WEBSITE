@@ -1,0 +1,77 @@
+/* General Styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Styling the main container */
+  .container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Header Style */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  /* Label and Input field styles */
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Submit Button style */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* PayPal Button Section */
+  #paypal-button-container {
+    margin-top: 20px;
+  }
+  
+  /* Confirmation message styles */
+  #confirmationMessage {
+    font-size: 18px;
+    color: #4CAF50;
+  }
+  
+  #paymentSection {
+    margin-top: 30px;
+  }
+  
